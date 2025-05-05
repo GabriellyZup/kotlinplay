@@ -85,15 +85,174 @@ fun main() {
 //    println("Is the number even? $isEven")
 // //escolhe se vai usar !! ou ?: 0 - os dois ao mesmo tempo, fica valendo 0
 
-    println("Please enter a number: ")
-    val input = readln()
-    val inputAsInteger = input.toIntOrNull()?.inc()
-//.inc valida se o valor anterior não é nulo, entao se for valido ele inc
+//    println("Please enter a number: ")
+//    val input = readln()
+//    val inputAsInteger = input.toIntOrNull()?.rem(2)?.equals(0)
+////.rem ve se é remained com sobra 0 (par)
+//
+//    println("You've entered $input")
+//    println("is even?  $inputAsInteger")
 
-    println("You've entered $input")
-    println("The incremental number is $inputAsInteger")
+//42´´
+//    println("Please enter a number: ")
+//    val input = readln()
+//    val inputAsInteger = input.toIntOrNull()?.inc()
+////.inc valida se o valor anterior não é nulo, entao se for valido ele inc
+//
+//    println("You've entered $input")
+//    println("The incremental number is $inputAsInteger")
 
-42´´
+
+//    print ("please enter a number: ")
+//    val input = readln()
+//    val inputAsInteger = input.toIntOrNull()
+//    println("You've entered $input")
+//
+//    if(inputAsInteger != null) {
+//        val isEven = inputAsInteger %2 == 0
+//
+//        if (isEven) {
+//            println ("The number is even!")
+//        } else {
+//            println ("The number is odd!")
+//        }
+//    } else {
+//        println("Enter a valid number!")
+
+    //evitar if else, usar output quando for varios.
+
+
+
+//    print ("please enter a number: ")
+//    val input = readln()
+//    val inputAsInteger = input.toIntOrNull()
+//    println("You've entered $input")
+//
+//    if(inputAsInteger != null) {
+//        val output = if (inputAsInteger %2 == 0){
+//            "The number is even!"
+//        } else {
+//           "The number is odd!"
+//        }
+//        println(output)
+//    } else {
+//        println("Enter a valid number!")
+//
+//    }
+
+//    println ("please, enter a number: ")
+//    val input = readln()
+//    val inputAsInterger = input.toIntOrNull()
+//    println("You've entered $input")
+//
+//    if (inputAsInterger != null) {
+//        val output = when {
+//            inputAsInterger % 2 == 0 -> "The number is even!"
+//            inputAsInterger < 10 -> "The number is odd and less than 10"
+//            else -> "The number is odd and at last 11"
+//        }
+//
+//        println(output)
+//
+//    } else {
+//        println("enter a valid number!")
+//    }
+
+
+//    println ("please, enter a number: ")
+//    val input = readln()
+//    val inputAsInterger = input.toIntOrNull()
+//    println("You've entered $input")
+//
+//    val output = when(inputAsInterger){
+//        null -> "enter a valid number!"
+//        3 -> "the number is three!"
+//        5 -> "the number is five!"
+//        in 4..20 -> "the number is between 10 and 20."
+//        else -> "random number"
+//    }
+//        println(output)
+
+
+
+
+//_____________________
+//    1h try catch rever
+
+//1h15 arrays
+
+//    println ("please, enter a number: ")
+//    val input = readln()
+//    val inputAsInterger = input.toIntOrNull()
+//    println("You've entered $input")
+//
+//    val favoriteNumbers = intArrayOf(1, 2, 3, 4, 5)
+//    favoriteNumbers[2] = 3
+//
+//    if(inputAsInterger != null && inputAsInterger in 0..favoriteNumbers.lastIndex){
+//        println("your number is ${favoriteNumbers[inputAsInterger]}")
+//
+//    } else {
+//        println("that index doesn't exist")
+//    }
+//
+
+//    println ("How many numbers will you enter? ")
+//    val amountOfNumbers = readln().toIntOrNull() ?: 0
+//
+//
+//    val numbers = mutableListOf<Int>()
+//
+//    for (i in 0 until amountOfNumbers){
+//        println("Please enter number #${i + 1}")
+//        val number = readln().toIntOrNull() ?: continue
+//        numbers.add(number)
+//    }
+//
+//    for (number in numbers) {
+//        println(number)
+//    }
+
+//    1.53 lambda funcion
+
+    //fiter char
+
+//    println("enter a string")
+//    val input = readln()
+//
+//    val favoriteNumbers = intArrayOf(1,2,3,4)
+//    val evenNumbers = favoriteNumbers.filter {it % 2 == 0}
+//
+//    val lettersOnly = input.myFilter {
+//        it.isLetter()
+//    }
+//
+//    //println(evenNumbers)
+//    println(lettersOnly)
+//}
+//
+//fun String.myFilter(predicate: (Char) -> Boolean): String {
+//    return buildString {
+//        for (char in this@myFilter){
+//            if (predicate(char)) {
+//                append(char)
+//            }
+//        }
+//
+//    }
+
+
+    //classes oop 2h
+
+
+
 
 
 }
+
+
+
+
+
+
+
