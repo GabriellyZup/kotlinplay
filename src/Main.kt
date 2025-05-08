@@ -245,7 +245,33 @@ fun main() {
     //classes oop 2h
 
 
+    // Crio uma lista de números de 1 a 9
+    //val numbers = (1..9).toList()
 
+    // Crio uma lista fixa de números
+    //val numbers = listOf(2, 5, 26, 888, 65, 120, 355)
+
+    println("Enter numbers separated by space:")
+    val input = readln()
+
+    // Divido a string em partes, converto cada parte para Int e crio a lista
+    //split(" "): divide a string em partes usando espaço como separador.
+    //mapNotNull { it.toIntOrNull() }: tenta converter cada parte para Int.
+    //toIntOrNull(): retorna o número se conseguir converter, ou null se for letra ou algo inválido.
+    //mapNotNull: remove todos os nulls, ou seja, só entram na lista os valores que são números válidos
+    val numbers = input.split(" ").mapNotNull { it.toIntOrNull() }
+
+    // Filtro apenas os números pares da lista
+    val evenNumbers = numbers.filter { it % 2 == 0 }
+
+    // Imprimo os números pares encontrados
+    println("The even numbers are: $evenNumbers")
+
+    // Faço a soma dos números pares
+    val sumOfEvens = evenNumbers.sum()
+
+    // Imprimo o resultado da soma
+    println("The sum of even numbers is: $sumOfEvens")
 
 
 }
